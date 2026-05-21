@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: airbnb_raw
+    database: airbnb-analytics-496218
+    schema: airbnb_raw
+    tables:
+      - name: listings
+      - name: calendar
