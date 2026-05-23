@@ -1,0 +1,35 @@
+version: 2
+
+models:
+  - name: mart_listings_full
+    description: "Tabela principal com dados de listings e ocupação do Airbnb Rio de Janeiro"
+    columns:
+      - name: listing_id
+        description: "ID único do imóvel"
+        tests:
+          - unique
+          - not_null
+
+      - name: neighbourhood
+        tests:
+          - not_null
+
+      - name: room_type
+        tests:
+          - not_null
+          - accepted_values:
+              arguments:
+                values: ['Entire home/apt', 'Private room', 'Shared room', 'Hotel room']
+
+      - name: price
+        tests:
+          - not_null
+
+      - name: occupancy_rate
+        description: "Taxa de ocupação entre 0 e 1"
+
+  - name: mart_listings_summary
+    columns:
+      - name: neighbourhood
+        tests:
+          - not_null
