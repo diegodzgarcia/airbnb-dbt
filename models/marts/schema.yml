@@ -33,3 +33,25 @@ models:
       - name: neighbourhood
         tests:
           - not_null
+
+  - name: mart_seasonality
+    description: "Análise de sazonalidade do Airbnb Rio de Janeiro por mês, bairro e tipo de quarto"
+    columns:
+      - name: year
+        description: "Ano"
+        tests:
+          - not_null
+      - name: month
+        description: "Mês (1 a 12)"
+        tests:
+          - not_null
+      - name: neighbourhood
+        description: "Bairro do imóvel"
+      - name: room_type
+        description: "Tipo de quarto"
+      - name: occupancy_rate
+        description: "Taxa de ocupação entre 0 e 1"
+      - name: total_revenue
+        description: "Receita total realizada no período"
+      - name: avg_price
+        description: "Preço médio por noite"
