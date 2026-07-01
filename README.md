@@ -8,11 +8,11 @@ Pipeline de dados completo com análise do mercado de aluguéis de curta tempora
 
 ### Página 1 — Visão Geral do Mercado
 
-![Visão Geral do Mercado](dashboard_visao_geral.png)
+![Visão Geral do Mercado](images/dashboard_visao_geral.png)
 
 ### Página 2 — Análise de Preço, Ocupação e Sazonalidade
 
-![Análise de Preço e Ocupação](dashboard_preco_ocupacao.png)
+![Análise de Preço e Ocupação](images/dashboard_preco_ocupacao.png)
 
 ---
 
